@@ -7,6 +7,35 @@ body {
   color: #fff;
   overflow-x: hidden;
 }
+
+/* Mobile-Specific Styles */
+@media screen and (max-width: 768px) {
+  .service-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 90%; /* Adjusted for better mobile fit */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card .card_title__container .card_title {
+    font-size: 1.5rem;
+  }
+
+  .card .card__list {
+    display: none; /* Hide details on mobile */
+  }
+}
+
+
 /* Particle Animation */
 #particles-js {
   position: absolute;
@@ -371,6 +400,176 @@ button::before {
 .card .card__list .card__list_item .list_text {
   font-size: 0.75rem;
   color: var(--white);
+}
+
+/* CSS for the Specific Card in "Why Choose AVUM COST?" */
+#features .outer {
+  width: 100%; /* Full width for responsiveness */
+  max-width: 700px; /* Slightly larger max-width for the card */
+  height: auto; /* Adjust height based on content */
+  border-radius: 10px;
+  padding: 1px;
+  background: radial-gradient(circle 230px at 0% 0%, #ffffff, #0c0d0d);
+  position: relative;
+  margin: 0 auto; /* Center the card on all screens */
+}
+
+#features .dot {
+  width: 5px;
+  aspect-ratio: 1;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ffffff;
+  border-radius: 100px;
+  z-index: 2;
+  right: 10%;
+  top: 10%;
+  animation: moveDot 6s linear infinite;
+}
+
+@keyframes moveDot {
+  0%,
+  100% {
+    top: 10%;
+    right: 10%;
+  }
+  25% {
+    top: 10%;
+    right: calc(100% - 35px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    right: calc(100% - 35px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    right: 10%;
+  }
+}
+
+#features .card {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  border: solid 1px #202222;
+  background-color: hsla(240, 15%, 9%, 1); /* Base color from the original gradient */
+  background-image: radial-gradient(
+      at 88% 40%,
+      hsla(240, 15%, 9%, 1) 0px,
+      transparent 85%
+    ),
+    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, hsl(263, 93%, 56%) 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
+    radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /* Center-align text */
+  flex-direction: column; /* Stack image and content vertically */
+}
+
+#features .card-image {
+  width: 50%; /* Image width */
+  max-width: 300px; /* Larger max-width */
+  margin-bottom: 20px; /* Space between image and content */
+}
+
+#features .card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+#features .card-content {
+  width: 100%; /* Full width for content */
+}
+
+#features .card .heading {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#features .card p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+}
+
+#features .ray {
+  width: 220px;
+  height: 45px;
+  border-radius: 100px;
+  position: absolute;
+  background-color: #c7c7c7;
+  opacity: 0.4;
+  box-shadow: 0 0 50px #fff;
+  filter: blur(10px);
+  transform-origin: 10%;
+  top: 0%;
+  left: 0;
+  transform: rotate(40deg);
+}
+
+#features .line {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: #2c2c2c;
+}
+
+#features .topl {
+  top: 10%;
+  background: linear-gradient(90deg, #888888 30%, #005f5f 70%);
+}
+
+#features .bottoml {
+  bottom: 10%;
+}
+
+#features .leftl {
+  left: 10%;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(180deg, #747474 30%, #00d5ff 70%);
+}
+
+#features .rightl {
+  right: 10%;
+  width: 1px;
+  height: 100%;
+}
+
+/* Responsive Design for Mobile (Enhanced for centering) */
+@media (max-width: 768px) {
+  #features .outer {
+    padding: 10px; /* Add some padding for mobile */
+    max-width: 90%; /* Slightly smaller max-width for mobile */
+    margin: 0 auto; /* Ensure centering on mobile */
+  }
+
+  #features .card {
+    padding: 15px; /* Reduce padding on mobile for better fit */
+  }
+
+  #features .card-image {
+    width: 90%; /* Larger image width for mobile */
+    max-width: 250px; /* Adjust max-width for mobile */
+  }
+
+  #features .dot {
+    display: none; /* Optional: Hide the dot animation on mobile for simplicity */
+  }
+
+  #features .ray {
+    display: none; /* Optional: Hide the ray on mobile if it causes layout issues */
+  }
 }
 
 /* Testimonials Section */
