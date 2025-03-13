@@ -1,0 +1,118 @@
+/* Custom styles for the web development page */
+.webdev-hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    padding-top: 80px;
+  }
+  
+  .code-block {
+    background-color: #111;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #f97316;
+    font-family: monospace;
+    color: #f4f4f4;
+    overflow-x: auto;
+  }
+  
+  .code-block .comment {
+    color: #888;
+  }
+  
+  .code-block .keyword {
+    color: #f97316;
+  }
+  
+  .code-block .tag {
+    color: #0EA5E9;
+  }
+  
+  .code-block .string {
+    color: #22c55e;
+  }
+  
+  .code-block .property {
+    color: #D946EF;
+  }
+  
+  .process-item {
+    border-left: 3px solid #f97316;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  
+  .process-item:before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #f97316;
+  }
+  
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+  }
+  
+  .tech-item {
+    background: rgba(249, 115, 22, 0.1);
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid rgba(249, 115, 22, 0.3);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .tech-item:hover {
+    background: rgba(249, 115, 22, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .glowing-btn {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(to right, #f97316, #ec4899);
+    color: white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 40px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  
+  .glowing-btn:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(315deg, #f97316, #ec4899, #f97316);
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .glowing-btn:hover:before {
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+    color: white;
+  }

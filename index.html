@@ -1,457 +1,309 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="ICO File" href="favicon.ico">
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AVUM COST</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<!-- Add this in head section -->
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span>AVUM COST</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <div id="particles-js"></div>
-    <div class="hero-content">
-      <h1>AVUM COST</h1>
-      <p>From TikTok Ads to AI Voice Agents – We Deliver Results That Scale.</p>
-      <div class="hero-buttons">
-        <button onclick="window.location.href='#services'">Explore Services</button>
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Elevate Your <span class="gradient-text">Digital Presence</span></h1>
+        <p>We help businesses thrive in the digital world with custom TikTok strategies, Shopify stores, and AI solutions.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#services" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="blob"></div>
+        <img src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Digital Marketing">
       </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services">
-    <h2>Our AI-Driven Services</h2>
-    <div class="service-cards">
-      <!-- TikTok Ad Accounts Card -->
-      <div class="card">
-        <img src="4602451.webp" alt="TikTok AD account" class="service-logo">
-        <div class="card__border"></div>
-        <div class="card_title__container">
-          <span class="card_title">TikTok Ad Accounts</span>
-          <p class="card_paragraph">Maximize your reach with our premium TikTok ad accounts.</p>
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our <span class="gradient-text">Services</span></h2>
+        <p>Comprehensive solutions to boost your online business</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Website Development</h3>
+          <p>Professional website development with modern technologies to establish your online presence effectively.</p>
         </div>
-        <hr class="line" />
-        <ul class="card__list">
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">Premium Ad Accounts</span>
-          </li>
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">Targeted Campaigns</span>
-          </li>
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">24/7 Support</span>
-          </li>
-        </ul>
-        <h3 class="price">
-          <span class="new-price">6000rs</span>
-      </h3>
-<button class="glow-button" onclick="window.location.href='checkout.html'">
-  GRAB NOW
-</button>
-      </div>
-
-      <!-- AI Voice Agents Card -->
-    <div class="card">
-      <img src="voice.webp" alt="AI voice" class="service-logo">
-      <div class="card__border"></div>
-      <div class="card_title__container">
-        <span class="card_title">AI Voice Agents</span>
-        <p class="card_paragraph">Automate customer interactions with cutting-edge AI voice technology.</p>
-      </div>
-      <hr class="line" />
-      <ul class="card__list">
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">Natural Voice AI</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">24/7 Availability</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">Customizable Responses</span>
-        </li>
-      </ul>
-      <h3 class="price">
-        <span class="new-price">21000rs</span>
-    </h3>
-      <button class="glow-button" onclick="window.location.href='checkout.html'">
-        GRAB NOW
-      </button>
-      
-    </div>
-
-      <!-- Shopify Payments -->
-      <div class="card">
-        <img src="payment-protection-3d-icon-download-in-png-blend-fbx-gltf-file-formats--card-secure-cyber-security-pack-icons-4468780.webp" alt="Shopify Payments" class="service-logo">
-        <div class="card__border"></div>
-        <div class="card_title__container">
-          <span class="card_title">Shopify Payments</span>
-          <p class="card_paragraph">Get your safe payments with shopify payment & build more trust with your customers</p>
+        <div class="service-card">
+          <i class="fa-solid fa-store"></i>
+          <h3>Shopify Store Design</h3>
+          <p>Custom Shopify store development with attractive UI/UX that converts visitors into customers.</p>
         </div>
-        <hr class="line" />
-        <ul class="card__list">
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">All Cards Availability</span>
-          </li>
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">life time guarantee</span>
-          </li>
-          <li class="card__list_item">
-            <span class="check">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-                <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-              </svg>
-            </span>
-            <span class="list_text">easy & safe payments</span>
-          </li>
-        </ul>
-        <h3 class="price">
-          <span class="new-price">10000rs</span>
-      </h3>
-        <button class="glow-button" onclick="window.location.href='checkout.html'">
-          GRAB NOW
-        </button>
-
-    </div>
-
-    <!-- Digital Products Card -->
-    <div class="card">
-      <img src="digital product.webp" alt="Digital Products" class="service-logo">
-      <div class="card__border"></div>
-      <div class="card_title__container">
-        <span class="card_title">Digital Products</span>
+        <div class="service-card">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Payment Integration</h3>
+          <p>Seamless payment gateway integration for smooth checkout experiences.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-microphone"></i>
+          <h3>AI Voice Agents</h3>
+          <p>Advanced AI voice solutions to enhance customer interactions and streamline processes.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-message"></i>
+          <h3>AI Chat Bots</h3>
+          <p>Intelligent chatbots that provide 24/7 customer support and improve user engagement.</p>
+        </div>
+        <div class="service-card">
+          <i class="fa-solid fa-box"></i>
+          <h3>Digital Products</h3>
+          <p>Creation and management of digital products that generate passive income.</p>
+        </div>
       </div>
-      <hr class="line" />
-      <ul class="card__list">
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">7k+ Viral Reels</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">10k+ Fitness Content</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">AI Templates</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">Paid Softwares</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">500+  E-Books</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">500+ Shopify themes</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">130+ Premium Softwares</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">500+ Premium Courses</span>
-        </li>
-      </ul>
-      </ul>
-      </ul>
-      <h3 class="price">
-        <span class="new-price">Free</span>
-    </h3>
-    <button class="glow-button" onclick="window.location.href='giveawayform.html'">
-      GRAB NOW
-    </button>
-    
-      
-    </div>
-
-    <!-- Shopify Store Design Card -->
-    <div class="card">
-      <img src="shopify-bag-glossy-green-png-2.png" alt="Shopify Store Design" class="service-logo">
-      <div class="card__border"></div>
-      <div class="card_title__container">
-        <span class="card_title">Shopify Store Design</span>
-        <p class="card_paragraph">Get a high-converting, professionally designed Shopify store.</p>
-      </div>
-      <hr class="line" />
-      <ul class="card__list">
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">High-Converting Design</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">Mobile-Optimized</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">SEO-Friendly</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">Paid theme</span>
-        </li>
-        <li class="card__list_item">
-          <span class="check">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="check_svg">
-              <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd"></path>
-            </svg>
-          </span>
-          <span class="list_text">10 wining products</span>
-        </li>
-      </ul>
-      <h3 class="price">
-        <span class="new-price">7000rs</span>
-    </h3>
-      <button class="glow-button" onclick="window.location.href='checkout.html'">
-        GRAB NOW
-      </button>
-      
-    </div>
-  </div>
-      </button>
-      
-      
-
-    </div>
-      <!-- Repeat for other services (AI Voice Agents, Digital Products, Shopify Store Design) -->
     </div>
   </section>
 
-<!-- Features/Benefits Section -->
-<section id="features">
-  <h2>Why Choose AVUM COST?</h2>
-  <div class="feature-list">
-    <div class="outer">
-      <div class="dot"></div>
-      <div class="card">
-        <!-- Image on the Left Side -->
-        <div class="card-image">
-          <img src="DALL·E 2025-03-01 23.05.08 - A 3D cartoon-style character holding a large glowing light bulb in one hand.webp" alt="AI-Powered Solutions">
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our <span class="gradient-text">Process</span></h2>
+        <p>We follow a proven methodology to deliver exceptional results</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-number">01</div>
+          <div class="timeline-content">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <h3>TikTok AD Strategy</h3>
+            <p>We analyze your target audience and develop a customized TikTok advertising strategy to maximize engagement and conversions.</p>
+          </div>
         </div>
-        <!-- Content on the Right Side -->
-        <div class="card-content">
-          <p class="heading">AI-Powered Solutions</p>
-          <p>We deliver measurable success for our clients. Leverage the latest AI technology for your business. High-quality services at competitive prices. We're here to help you anytime.</p>
+        <div class="timeline-item">
+          <div class="timeline-number">02</div>
+          <div class="timeline-content">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h3>Shopify Store Development</h3>
+            <p>Our design team creates stunning Shopify stores that align with your brand identity and optimize the user experience.</p>
+          </div>
         </div>
-        <!-- Decoration Lines and Ray -->
-        <div class="line topl"></div>
-        <div class="line bottoml"></div>
-        <div class="line leftl"></div>
-        <div class="line rightl"></div>
-        <div class="ray"></div>
+        <div class="timeline-item">
+          <div class="timeline-number">03</div>
+          <div class="timeline-content">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <h3>Payment Integration</h3>
+            <p>We seamlessly integrate payment solutions into your Shopify store to provide a smooth checkout experience for your customers.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-number">04</div>
+          <div class="timeline-content">
+            <div class="timeline-icon">
+              <i class="fa-solid fa-message"></i>
+            </div>
+            <h3>AI Implementation</h3>
+            <p>We deploy advanced AI voice agents and chatbots to automate customer interactions and provide 24/7 support for your business.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="slider">
-    <div class="list">
-      
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ff7e5f, #feb47b);">
-          <p class="heading">Amir Ali ⭐⭐⭐⭐⭐</p>
-          <p>"AVUM COST helped us scale our TikTok ads by 300% in just 2 months!"</p>
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-header">
+        <h2>Pricing <span class="gradient-text">Plans</span></h2>
+        <p>Choose the perfect plan for your business needs</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="price">$999<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Basic TikTok Strategy</li>
+            <li><i class="fa-solid fa-check"></i> Simple Shopify Store</li>
+            <li><i class="fa-solid fa-check"></i> Basic Payment Integration</li>
+            <li><i class="fa-solid fa-check"></i> Email Support</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> AI Chatbot</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> AI Voice Agents</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-header">
+            <div class="popular-tag">Most Popular</div>
+            <h3>Business</h3>
+            <div class="price">$2,499<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Advanced TikTok Strategy</li>
+            <li><i class="fa-solid fa-check"></i> Custom Shopify Store</li>
+            <li><i class="fa-solid fa-check"></i> Full Payment Integration</li>
+            <li><i class="fa-solid fa-check"></i> Priority Support</li>
+            <li><i class="fa-solid fa-check"></i> Basic AI Chatbot</li>
+            <li class="disabled"><i class="fa-solid fa-xmark"></i> AI Voice Agents</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Enterprise</h3>
+            <div class="price">$4,999<span>/month</span></div>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Premium TikTok Strategy</li>
+            <li><i class="fa-solid fa-check"></i> Premium Shopify Store</li>
+            <li><i class="fa-solid fa-check"></i> Advanced Payment Solutions</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 Dedicated Support</li>
+            <li><i class="fa-solid fa-check"></i> Advanced AI Chatbot</li>
+            <li><i class="fa-solid fa-check"></i> Custom AI Voice Agents</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
         </div>
       </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #6a11cb, #2575fc);">
-          <p class="heading">Abdullah Malik ⭐⭐⭐⭐⭐</p>
-          <p>"The AI voice agents transformed our customer service."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #00c6ff, #0072ff);">
-          <p class="heading">Malik Hassan ⭐⭐⭐⭐⭐</p>
-          <p>"AI voice agent ki waja se hmara support system automate hogya hy. Thanks to AVUM COST❤️"</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ff512f, #dd2476);">
-          <p class="heading">Ahmed Ali ⭐⭐⭐⭐⭐</p>
-          <p>"The TikTok Ad Accounts service helped me target my audience effectively, boosting my sales and engagement."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ffb6c1, #ff69b4);">
-          <p class="heading">Saira Malik ⭐⭐⭐⭐⭐</p>
-          <p>"The AI Voice Agents have revolutionized my customer service experience, handling queries round the clock effortlessly."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ff9a8b, #ffc3a0);">
-          <p class="heading">Ayesha Khan ⭐⭐⭐⭐⭐</p>
-          <p>"With the digital products service, selling online has become much easier and more organized for my business."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #a1c4fd, #c2e9fb);">
-          <p class="heading">Farhan Shah ⭐⭐⭐⭐⭐</p>
-          <p>"Shopify Payments integration was seamless, making transactions smoother and easier for my customers without any hassle."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #fbc2eb, #a18cd1);">
-          <p class="heading">Usman Tariq ⭐⭐⭐⭐⭐</p>
-          <p>"The Shopify Store Design service completely transformed my website, increasing traffic, and improving overall customer satisfaction."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #84fab0, #8fd3f4);">
-          <p class="heading">Faiza Iqbal ⭐⭐⭐⭐⭐</p>
-          <p>"The SEO services improved my site's ranking on Google, and now I’m getting more organic traffic."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ff9a8b, #ff6a88);">
-          <p class="heading">Omar Farooq ⭐⭐⭐⭐⭐</p>
-          <p>"The content creation service made a massive difference in how my brand communicates with customers. Perfect!"</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #42e695, #3bb2b8);">
-          <p class="heading">Hassan Khan ⭐⭐⭐⭐⭐</p>
-          <p>"AI Voice Agents ne meri customer service ko automate karke, 24/7 queries handle karna asaan bana diya hai."</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <div class="card" style="--bg: linear-gradient(to right, #ff7e5f, #feb47b);">
-          <p class="heading">Habibullah ⭐⭐⭐⭐⭐</p>
-          <p>"Shopify Payments ne mere store mein transactions ko seamless banaya hai, customers ko asaani se payments karne ki suhulat mil gayi hai."</p>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Footer Section -->
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <p>Ready to take your business to the next level? Contact us today!</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>123 Digital Avenue, Tech City, 10001</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>info@neonnexus.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="social-media">
-      <a href="#"><i class="fab fa-tiktok"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>NeonNexus</h3>
+          <p>Elevating digital experiences with cutting-edge solutions.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li>TikTok AD Accounts</li>
+            <li>Shopify Store Design</li>
+            <li>Payment Integration</li>
+            <li>AI Voice Agents</li>
+            <li>AI Chat Bots</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for the latest updates.</p>
+          <form>
+            <input type="email" placeholder="Your Email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 NeonNexus. All Rights Reserved.</p>
+      </div>
     </div>
-    <button class="btn whatsapp-btn" onclick="window.location.href='https://chat.whatsapp.com/GltD9prZltb1pdPHF7nqco'">
-      JOIN WHATSAPP GROUP
-    </button>
-    <p>© 2025 AVUM COST. All Rights Reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

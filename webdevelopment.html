@@ -1,0 +1,503 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development - TechNova</title>
+  <link rel="style" href="webdevelopment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Custom styles for the web development page */
+    .webdev-hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background-color: #000;
+      padding-top: 80px;
+    }
+    
+    .code-block {
+      background-color: #111;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 4px solid #f97316;
+      font-family: monospace;
+      color: #f4f4f4;
+      overflow-x: auto;
+    }
+    
+    .code-block .comment {
+      color: #888;
+    }
+    
+    .code-block .keyword {
+      color: #f97316;
+    }
+    
+    .code-block .tag {
+      color: #0EA5E9;
+    }
+    
+    .code-block .string {
+      color: #22c55e;
+    }
+    
+    .code-block .property {
+      color: #D946EF;
+    }
+    
+    .process-item {
+      border-left: 3px solid #f97316;
+      padding-left: 20px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    
+    .process-item:before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 0;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #f97316;
+    }
+    
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 30px 0;
+    }
+    
+    .tech-item {
+      background: rgba(249, 115, 22, 0.1);
+      padding: 10px 15px;
+      border-radius: 30px;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    
+    .tech-item:hover {
+      background: rgba(249, 115, 22, 0.2);
+      transform: translateY(-3px);
+    }
+    
+    .glowing-btn {
+      position: relative;
+      display: inline-block;
+      padding: 15px 30px;
+      background: linear-gradient(to right, #f97316, #ec4899);
+      color: white;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-top: 40px;
+      overflow: hidden;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+    
+    .glowing-btn:before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: linear-gradient(315deg, #f97316, #ec4899, #f97316);
+      z-index: -1;
+      filter: blur(20px);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .glowing-btn:hover:before {
+      opacity: 1;
+    }
+    
+    .glowing-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.3);
+      color: white;
+    }
+    
+    .image-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+    
+    .image-container img {
+      width: 100%;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    
+    .image-container:hover img {
+      transform: scale(1.03);
+    }
+    
+    .image-container:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span>TechNova</span>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="webdevelopment.html" class="active">Web Development</a></li>
+          <li><a href="index.html#process">Our Process</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Web Development Hero Section -->
+  <section class="webdev-hero">
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div>
+          <h1>Building Your <span class="gradient-text">Digital Presence</span> With Code</h1>
+          <p class="mt-6 text-gray-400">We transform your ideas into elegant, functional websites using cutting-edge technologies and best practices in web development.</p>
+          
+          <div class="tech-stack">
+            <div class="tech-item">HTML5</div>
+            <div class="tech-item">CSS3</div>
+            <div class="tech-item">JavaScript</div>
+            <div class="tech-item">React</div>
+            <div class="tech-item">Angular</div>
+            <div class="tech-item">Node.js</div>
+            <div class="tech-item">PHP</div>
+            <div class="tech-item">WordPress</div>
+          </div>
+          
+          <a href="#contact-section" class="glowing-btn">Get Your First Website</a>
+        </div>
+        <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Web Development">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Code Section -->
+  <section class="py-20 bg-gray-950">
+    <div class="container">
+      <div class="section-header">
+        <h2>How We Create <span class="gradient-text">Your Website</span></h2>
+        <p>Our development process is systematic, transparent, and focused on delivering high-quality results</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div>
+          <div class="process-item">
+            <h3 class="text-xl font-semibold mb-2">1. Discovery & Planning</h3>
+            <p>We start by understanding your business goals, target audience, and requirements for the website. This forms the foundation of our development strategy.</p>
+          </div>
+          
+          <div class="process-item">
+            <h3 class="text-xl font-semibold mb-2">2. Design & Wireframing</h3>
+            <p>Our designers create mockups and wireframes of your website, focusing on user experience, visual appeal, and your brand identity.</p>
+          </div>
+          
+          <div class="process-item">
+            <h3 class="text-xl font-semibold mb-2">3. Development & Coding</h3>
+            <p>Our expert developers bring the designs to life using clean, efficient code. We follow industry best practices and ensure your website is responsive and fast.</p>
+          </div>
+          
+          <div class="process-item">
+            <h3 class="text-xl font-semibold mb-2">4. Testing & Optimization</h3>
+            <p>We rigorously test your website across devices and browsers, optimizing for performance, SEO, and accessibility.</p>
+          </div>
+          
+          <div class="process-item">
+            <h3 class="text-xl font-semibold mb-2">5. Launch & Support</h3>
+            <p>After a successful launch, we provide ongoing support and maintenance to ensure your website continues to perform optimally.</p>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Our Code in Action</h3>
+          <p class="mb-4">We write clean, maintainable code that follows industry standards:</p>
+          
+          <div class="code-block">
+            <pre><span class="comment">// Responsive navigation component</span>
+<span class="keyword">const</span> <span class="tag">Navigation</span> = () => {
+  <span class="keyword">const</span> [isOpen, setIsOpen] = <span class="tag">useState</span>(false);
+  
+  <span class="keyword">return</span> (
+    &lt;<span class="tag">nav</span> <span class="property">className</span>=<span class="string">"header-navigation"</span>&gt;
+      &lt;<span class="tag">div</span> <span class="property">className</span>=<span class="string">"logo"</span>&gt;YourBrand&lt;/<span class="tag">div</span>&gt;
+      &lt;<span class="tag">button</span> 
+        <span class="property">onClick</span>={() => <span class="tag">setIsOpen</span>(!isOpen)}
+        <span class="property">className</span>=<span class="string">"mobile-toggle"</span>
+      &gt;
+        Menu
+      &lt;/<span class="tag">button</span>&gt;
+      
+      &lt;<span class="tag">ul</span> <span class="property">className</span>={isOpen ? <span class="string">"menu-open"</span> : <span class="string">""</span>}&gt;
+        &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> <span class="property">href</span>=<span class="string">"#home"</span>&gt;Home&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+        &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> <span class="property">href</span>=<span class="string">"#about"</span>&gt;About&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+        &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> <span class="property">href</span>=<span class="string">"#services"</span>&gt;Services&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+        &lt;<span class="tag">li</span>&gt;&lt;<span class="tag">a</span> <span class="property">href</span>=<span class="string">"#contact"</span>&gt;Contact&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+      &lt;/<span class="tag">ul</span>&gt;
+    &lt;/<span class="tag">nav</span>&gt;
+  );
+};</pre>
+          </div>
+          
+          <p class="mt-6 mb-4">We optimize CSS for performance and responsiveness:</p>
+          
+          <div class="code-block">
+            <pre><span class="comment">/* Modern CSS with flexbox and grid */</span>
+<span class="tag">.services-grid</span> {
+  <span class="property">display</span>: grid;
+  <span class="property">grid-template-columns</span>: repeat(auto-fit, minmax(300px, 1fr));
+  <span class="property">gap</span>: 2rem;
+}
+
+<span class="tag">.service-card</span> {
+  <span class="property">background</span>: var(--card-bg);
+  <span class="property">border-radius</span>: 8px;
+  <span class="property">padding</span>: 2rem;
+  <span class="property">transition</span>: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+<span class="tag">.service-card:hover</span> {
+  <span class="property">transform</span>: translateY(-5px);
+  <span class="property">box-shadow</span>: 0 15px 30px rgba(0, 0, 0, 0.1);
+}</pre>
+          </div>
+          
+          <p class="mt-6">Our JavaScript is optimized for modern browsers with fallbacks as needed:</p>
+          
+          <div class="code-block">
+            <pre><span class="comment">// Using modern JavaScript features</span>
+<span class="keyword">const</span> <span class="tag">loadData</span> = <span class="keyword">async</span> () => {
+  <span class="keyword">try</span> {
+    <span class="keyword">const</span> response = <span class="keyword">await</span> fetch('/api/data');
+    <span class="keyword">const</span> data = <span class="keyword">await</span> response.json();
+    
+    <span class="keyword">return</span> data.filter(item => item.active)
+              .map(item => ({
+                id: item.id,
+                title: item.title,
+                ...item
+              }));
+  } <span class="keyword">catch</span> (error) {
+    console.error('Error loading data:', error);
+    <span class="keyword">return</span> [];
+  }
+};</pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-20">
+        <h3 class="text-2xl font-bold mb-6">Ready to Bring Your Website Vision to Life?</h3>
+        <a href="#contact-section" class="glowing-btn">Get Your First Website</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact-section" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Start Your <span class="gradient-text">Web Project</span></h2>
+        <p>Get in touch with our development team to discuss your website needs</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>webdev@technova.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-codepen"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Project Type">
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Tell us about your project" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>TechNova</h3>
+          <p>Elevating digital experiences with cutting-edge solutions.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="webdevelopment.html">Web Development</a></li>
+            <li><a href="index.html#process">Process</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Services</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>Shopify Store Design</li>
+            <li>Payment Integration</li>
+            <li>AI Voice Agents</li>
+            <li>AI Chat Bots</li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to our newsletter for the latest web development tips.</p>
+          <form>
+            <input type="email" placeholder="Your Email">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 TechNova. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navigation toggle for mobile
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const menu = document.querySelector('.menu');
+      
+      hamburger.addEventListener('click', function() {
+        menu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if(targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if(targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            if(menu.classList.contains('active')) {
+              menu.classList.remove('active');
+              hamburger.classList.remove('active');
+            }
+          }
+        });
+      });
+      
+      // Add active class to current section in navigation
+      function highlightNavigation() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.menu a');
+        
+        let scrollPosition = window.scrollY + 100;
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          
+          if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              if(link.getAttribute('href') === '#' + sectionId) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }
+      
+      window.addEventListener('scroll', highlightNavigation);
+      
+      // Add animation to the glowing button
+      const glowingBtns = document.querySelectorAll('.glowing-btn');
+      glowingBtns.forEach(btn => {
+        btn.addEventListener('mousemove', function(e) {
+          const rect = this.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          this.style.setProperty('--x', `${x}px`);
+          this.style.setProperty('--y', `${y}px`);
+        });
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
