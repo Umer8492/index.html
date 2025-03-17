@@ -309,6 +309,12 @@ nav {
   transition: var(--transition);
   border: 1px solid rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
+  position: relative; /* Added to make the button's absolute positioning relative to the card */
+  padding-bottom: 70px; /* Added to create space at the bottom for the button */
+  min-height: 300px; /* Ensure cards have a consistent height */
+  display: flex; /* Use flexbox for internal layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Distribute space between elements */
 }
 
 .service-card:hover {
@@ -334,7 +340,61 @@ nav {
 
 .service-card p {
   color: var(--gray-color);
+  margin-bottom: 20px; /* Added to ensure spacing above the button */
 }
+
+/* Button Styling */
+.Btn {
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #77530a, #ffd277, #77530a, #77530a, #ffd277, #77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: absolute; /* Position the button absolutely within the card */
+  bottom: 20px; /* Distance from the bottom of the card */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for the button's width to truly center it */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+}
+
+.Btn::before {
+  position: absolute;
+  content: "BUY NOW";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.Btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.Btn:active {
+  transform: translateX(-50%) scale(0.95); /* Adjusted to maintain centering on active state */
+}
+
+ 
 
 /* Process Section */
 .process {
