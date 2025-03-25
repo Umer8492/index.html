@@ -1,0 +1,422 @@
+/* Custom styles for the TikTok Ad Accounts page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(to bottom, #000, #1a1a1a);
+    position: relative;
+    overflow: hidden;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1628749528002-d0ed9a7b2ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80') center center/cover;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, #f97316, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+    color: #f4f4f4;
+}
+
+/* Common Section Styles */
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, #f97316, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+/* Features Section */
+#features {
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+#features ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#features li {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    position: relative;
+    background: rgba(249, 115, 22, 0.05);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+#features li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.1);
+    border-color: rgba(249, 115, 22, 0.4);
+}
+
+/* Pricing Section */
+#pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(249, 115, 22, 0.3);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #f97316, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.pricing-card p:first-of-type {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #f4f4f4;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: row; /* Keep as row even on mobile */
+        gap: 1rem;
+    }
+    
+    .pricing-card {
+        min-width: 230px; /* Slightly smaller on mobile */
+        padding: 1.5rem 1rem;
+        flex: 0 0 calc(50% - 1rem); /* Set to roughly half of container width minus gap */
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+    
+    #features li {
+        font-size: 1.1rem;
+        padding: 1.2rem 1.5rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+    .pricing-container {
+        flex-direction: row; /* Ensure it stays row */
+    }
+    
+    .pricing-card {
+        min-width: 140px; /* Even smaller on very small screens */
+        padding: 1rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .pricing-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .pricing-card p:first-of-type {
+        font-size: 1.5rem;
+    }
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+#testimonials p {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testimonials p:before {
+    content: '"';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 3rem;
+    color: rgba(249, 115, 22, 0.1);
+    font-family: serif;
+    line-height: 1;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #0a0a0a;
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+input, button {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f97316;
+}
+
+/* New Button Styles */
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+
+.Btn::before {
+    position: absolute;
+    content: "SUBSCRIBE";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+}
+
+.Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:active {
+    transform: scale(0.95);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, section {
+    animation: fadeIn 1s ease-out;
+}
+/* Pricing Card Styles */
+.pricing-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+/* Button Styles */
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+    margin-top: 1.5rem; /* Add margin to separate button from text */
+}
+
+.Btn::before {
+    position: absolute;
+    content: "Get Started";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+}
+
+.Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+
+.Btn:active {
+    transform: scale(0.95);
+}

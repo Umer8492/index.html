@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - TikTok Ad Accounts</title>
+    <link rel="stylesheet" href="tiktokcheckout7.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+</head>
+<body>
+    <header class="checkout-header">
+        <h1>Secure Checkout</h1>
+        <p>Complete your order to access premium TikTok ad accounts</p>
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </header>
+    
+    <section id="checkout-container">
+        <div class="checkout-grid">
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="selected-plan">
+                    <div class="plan-details">
+                        <h3 id="plan-name">International Ad Account</h3>
+                        <p id="plan-price">7000rs</p>
+                    </div>
+                    <a href="tiktokcheckout5.html" class="button">
+                    <button id="change-plan">Change</button>
+                    </a>
+                </div>
+                
+                <div class="price-breakdown">
+                    <div class="price-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">7000rs</span>
+                    </div>
+                    <div class="price-row discount-row" style="display: none;">
+                        <span>Discount</span>
+                        <span id="discount-amount">-3000</span>
+                    </div>
+                    <div class="price-row total">
+                        <span>Total</span>
+                        <span id="total">7000rs</span>
+                    </div>
+                </div>
+
+                <div class="security-badges">
+                    <div class="badge">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2893/2893537.png" alt="SSL Secure">
+                        <span>SSL Secure</span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1803/1803554.png" alt="Trust Verified">
+                        <span>Trust Verified</span>
+                    </div>
+                    <div class="badge">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2697/2697623.png" alt="Data Protected">
+                        <span>Data Protected</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Customer Information and Payment Form -->
+            <div class="payment-form">
+                <form id="checkout-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="screenshot">Upload Payment Screenshot</label>
+                            <div class="file-upload">
+                                <input type="file" id="screenshot" accept="image/*"required>>
+                                <div class="upload-preview" id="upload-preview">
+                                    <p>Drag & drop or click to upload</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3>Payment Method</h3>
+                        <div class="payment-options">
+                            <div class="payment-option selected" data-method="jazzcash">
+                                <input type="radio" id="jazzcash" name="payment-method" value="jazzcash">
+                                <label for="jazzcash">
+                                    <img src="Jazz cash.png" alt="Jazz Cash">
+                                    <span>Jazz Cash</span>
+                                </label>
+                            </div>
+                        </div>
+                        <h3>JazzCash</h3>
+                        <p>Name: <strong>Muhammad Younas</strong></p>
+                        <p>Number: <strong>0323-4276480</strong></p>
+                        <p>Please send the payment via JazzCash and upload the screenshot below.</p>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="checkout-button">Complete Purchase</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Order Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="confirmation-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Success" class="success-icon">
+                <h2>Thank You for Your Order!</h2>
+            </div>
+            <div class="order-details">
+                <p class="order-number">Order #<span id="order-number">TIK-12345</span></p>
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <p><strong>Service:</strong> <span id="confirmation-service">Local TikTok Ad Account</span></p>
+                    <p><strong>Amount:</strong> <span id="confirmation-amount">7000rs</span></p>
+                </div>
+                <div class="access-instructions">
+                    <h3>How to Access Your Account</h3>
+                    <ol>
+                        <li>You will receive an email with your TikTok ad account credentials within 24 hours.</li>
+                        <li>Login using the provided credentials.</li>
+                        <li>Set up your ad campaigns using our unlimited ad spend feature.</li>
+                        <li>For any issues, contact our support team.</li>
+                    </ol>
+                </div>
+                <div class="support-info">
+                    <h3>Need Help?</h3>
+                    <p>Contact our support team at <a href="mailto:avumcost@gmail.com">avumcost@gmail.com</a> or call us at +92 32S-4771501.</p>
+                </div>
+            </div>
+            <button id="continue-button">Return to Home</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Shehroz Trader. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="tiktokcheckout.js"></script>
+</body>
+</html>
